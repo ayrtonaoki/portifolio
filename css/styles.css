@@ -488,6 +488,27 @@ progress {
   display: none !important;
 }
 
+
+.experience-text {
+  text-align: justify;
+  width: 800px;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre as colunas */
+}
+
+.column {
+  flex: 1; /* Faz com que ambas as colunas tenham a mesma largura */
+  margin-right: 20px; /* Espaçamento à direita da coluna */
+  width: 200px;
+}
+
+.column:last-child {
+  margin-right: 0; /* Remove o espaçamento à direita da última coluna */
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
