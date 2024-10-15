@@ -484,10 +484,7 @@ progress {
   vertical-align: baseline;
 }
 
-[hidden] {
-  display: none !important;
-}
-
+.en { display: none; }
 
 .experience-text {
   text-align: justify;

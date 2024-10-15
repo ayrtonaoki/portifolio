@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -31,4 +31,27 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+});
+
+document.getElementById('toggle-lang-btn').addEventListener('click', function() {
+    // Seleciona todos os textos em português e inglês
+    const ptTexts = document.querySelectorAll('.pt');
+    const enTexts = document.querySelectorAll('.en');
+
+    // Alterna a visibilidade dos textos
+    ptTexts.forEach(function(pt) {
+        pt.style.display = (pt.style.display === 'none') ? 'block' : 'none';
+    });
+
+    enTexts.forEach(function(en) {
+        en.style.display = (en.style.display === 'none') ? 'block' : 'none';
+    });
+
+    // Muda o texto do botão dependendo do idioma
+    const button = document.getElementById('toggle-lang-btn');
+    if (button.textContent === 'Change to English') {
+        button.textContent = 'Mudar para Português';
+    } else {
+        button.textContent = 'Change to English';
+    }
 });
